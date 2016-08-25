@@ -1,0 +1,70 @@
+<section class="mainbar">
+  <section class="matter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="widget wgreen">
+            <div ht-widget-header title="Search City"></div>
+            <div class="widget-content user">
+              <form>
+                <div class="row">
+                 <div class="form-group col-md-4">
+                   <input type="text" ng-model="vm.searchCityName" placeholder="Search City">
+                   <button type="submit" ng-click="vm.getCityInfos()">Search</button>
+                 </div>
+               </div>
+             </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="widget wblue">
+          <div ht-widget-header title="City Information"></div>
+          <div class="widget-content">
+              <h2>{{vm.cityInfos.content.name}}, <b>{{vm.cityInfos.content.sys.country}}</b></h2>
+              <hr>
+              <p class="bold">Temperature</p>
+              <p>{{vm.cityInfos.content.main.temp}}</p>
+              <hr>
+              <div class="small-6 columns">
+                <h6>
+                  <span><b>Min:</b>
+                    <span>{{vm.cityInfos.content.main.temp_min}}</span>
+                    <span></span>
+                  </span>
+                  <span><b>Max:</b>
+                    <span>{{vm.cityInfos.content.main.temp_max}}</span>
+                    <span></span>
+                  </span>
+                  <span><b>Wind</b>
+                    <span>{{vm.cityInfos.content.wind.speed}}</span>
+                    <span></span>
+                  </span>
+                </h5>
+              </div>
+          </div>
+          <div class="widget-foot">
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--<div class="col-md-6">
+        <div class="widget wgreen">
+          <div ht-widget-header title="Search City"></div>
+          <div class="widget-content user">
+            <form>
+              <div class="row">
+               <div class="form-group col-md-4">
+                  <ui-gmap-google-map center='vm.map' zoom='vm.zoom'/>
+               </div>
+             </div>
+           </form>
+        </div>
+      </div>
+    -->
+    </div>
+    </div>
+    </div>
+  </section>
+</section>
