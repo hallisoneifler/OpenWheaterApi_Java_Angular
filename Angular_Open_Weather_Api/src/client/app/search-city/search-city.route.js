@@ -16,7 +16,7 @@
       {
         state: 'search-city',
         config: {
-          url: '/search-city',
+          url: '/',
           templateUrl: 'app/search-city/search-city.html',
           controller: 'SearchCityController',
           controllerAs: 'vm',
